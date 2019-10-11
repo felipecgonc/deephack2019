@@ -103,8 +103,13 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+#PyCharm
+.idea/
+
 #pdfs
 presentations/
 
 #dados
 data/
+
+Sandbox.ipynb
