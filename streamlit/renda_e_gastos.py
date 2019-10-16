@@ -51,13 +51,13 @@ if data_type == "Atual":
         rounded_receitas = round(receitas_year_df.sum()["vl_arrecadacao"] / 100, 3)
 
         st.markdown(
-            f'Para a cidade de {city}, as receitas até agora no ano de {today_year} foram de **R${rounded_receitas} bilhões.**')
-        st.markdown(f'Já as despesas já somam **R${rounded_despesas} bilhões**.')
+            f'Para a cidade de {city}, as receitas até agora no ano de {today_year} foram de **R${rounded_receitas} milhões.**')
+        st.markdown(f'Já as despesas já somam **R${rounded_despesas} milhões**.')
 
         deficit = (rounded_receitas - rounded_despesas) < 0
 
         st.markdown(
-            f"O {'déficit' if deficit else 'superávit'} atual é de **R${abs(round(rounded_receitas - rounded_despesas, 3))} bilhões**.")
+            f"O {'déficit' if deficit else 'superávit'} atual é de **R${abs(round(rounded_receitas - rounded_despesas, 3))} milhões**.")
 
         st.header('Receitas:')
 
@@ -114,8 +114,8 @@ else:
         despesas_predicted = current_despesas_sum + forecasted_despesas_sum
 
         st.markdown(
-            f"Para o ano de {today_year}, a previsão de **receitas totais** é de **R${receitas_predicted / 1000000000} bilhões**.")
-        st.markdown(f"Já a previsão de **despesas totais** é de **R${despesas_predicted / 1000000000} bilhões**.")
+            f"Para o ano de {today_year}, a previsão de **receitas totais** é de **R${round(receitas_predicted / 1000000, 3)} milhões**.")
+        st.markdown(f"Já a previsão de **despesas totais** é de **R${round(despesas_predicted / 1000000, 3)} milhões**.")
 
         if despesas_predicted > receitas_predicted:
             st.markdown(
