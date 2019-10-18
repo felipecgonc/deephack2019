@@ -23,7 +23,7 @@ Por conveniência, dados provenientes de fontes externas já foram incluídos. E
 * Baixar e descompactar os [dados de receitas e despesas do TCE-SP](https://transparencia.tce.sp.gov.br/conjunto-de-dados), nos respectivos diretórios: _data/despesas/_ e _data/receitas/_
 * Instalar as bibliotecas necessárias para o funcionamento dos notebooks e telas do dashboard: `pip install -r requirements.txt`
 * Rodar os notebooks exploratórios, que se encarregarão de gerar os novos conjuntos de dados transformados em _data/_
-* Rodar as telas do dashboard: `cd streamlit` e, em seguida `streamlit run renda_e_gastos.py --server.port 2222` e `streamlit run despesaas_com_ods_11.py --server.port 2223` (garantir que sejam portas diferentes)
+* Rodar as telas do dashboard: `cd streamlit` e, em seguida `streamlit run renda_e_gastos.py --server.port 2222` e `streamlit run despesas_com_ods_11.py --server.port 2223` (garantir que sejam portas diferentes)
 * Rodar notebooks de novas features/melhoramento de modelos
 
 Obrigado!
