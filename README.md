@@ -14,16 +14,16 @@ O código apresentado aqui é composto, basicamente de 3 componentes:
 
 * Jupyter Notebooks de exploração de dados, bem como agregação e transformação de arquivos para melhorar leitura dos mesmos: _notebooks/Clusterizando cidades.ipynb_, _notebooks/Explorando dados de receitas e despesas.ipynb_ e _notebooks/Analisando despesas.ipynb_.
 * Jupyter Notebooks de propostas de novas features e análises para o Dashboard, originárias de análises anteriores ou não: _notebooks/IEG-M, o ODS 11 e norteamento de políticas públicas e desafios.ipynb_ (baseado na clusterização de cidades do item anterior) e _notebooks/Uma possibilidade de melhorar o modelo de análise de despesas.ipynb_ (baseado na análise de despesas do item anterior e na tela de análise de despesas em relação ao ODS 11 dos protótipos do Dashboard).
-* Prototipação de 2 telas do Dashboard, _streamlit/renda/_e/_gastos.py_ e _streamlit/despesas/_com/_ods/_11_.
+* Prototipação de 2 telas do Dashboard, *streamlit/renda_e_gastos.py* e *streamlit/despesas_com_ods_11*.
 
 ## Setup
 
 Por conveniência, dados provenientes de fontes externas já foram incluídos. Em seguida, para conseguir rodar o projeto deve-se seguir os seguintes passos:
 
 * Baixar e descompactar os [dados de receitas e despesas do TCE-SP](https://transparencia.tce.sp.gov.br/conjunto-de-dados), nos respectivos diretórios: _data/despesas/_ e _data/receitas/_
-* Instalar as bibliotecas necessárias para o funcionamento dos notebooks e telas do dashboard: `pip install -r requirements.text`
+* Instalar as bibliotecas necessárias para o funcionamento dos notebooks e telas do dashboard: `pip install -r requirements.txt`
 * Rodar os notebooks exploratórios, que se encarregarão de gerar os novos conjuntos de dados transformados em _data/_
-* Rodar as telas do dashboard: `cd streamlit` e, em seguida `streamlit run renda_e_gastos.py --server.port 2222` e `streamlit run despesaas_com_ods_11.py --server.port 1223` (garantir que sejam portas diferentes)
+* Rodar as telas do dashboard: `cd streamlit` e, em seguida `streamlit run renda_e_gastos.py --server.port 2222` e `streamlit run despesaas_com_ods_11.py --server.port 2223` (garantir que sejam portas diferentes)
 * Rodar notebooks de novas features/melhoramento de modelos
 
 Obrigado!
